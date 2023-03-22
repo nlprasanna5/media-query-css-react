@@ -1,14 +1,18 @@
-/* App.css */
-
 /* Header */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 /* Logo */
@@ -22,6 +26,8 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+
 }
 
 .navigation a {
@@ -55,41 +61,46 @@ header {
     align-items: flex-start;
 }
 
-.main-section {
+.mainSection {
     display: flex;
     flex-direction: row;
     padding: 20px;
+
+
 }
 
-.left-side {
+.leftSide {
     flex: 1;
 }
 
-.right-side {
+.rightSide {
     flex: 1;
 }
 
 h2 {
-    font-size: 6rem;
+    font-size: 4rem;
     text-align: start;
 }
 
-p{
+.text {
     font-size: 2.5rem;
     text-align: start;
     font-weight: 200;
-    color:gray
+    color: gray
 }
+
 .btn {
-   align-self: flex-start;
-   display: flex;
-   align-items: start;
+    align-self: flex-start;
+    display: flex;
+    align-items: flex-start;
+    /**/
 
 }
+
 button {
-    
-    padding: 10px 20px;
-    font-size: 16px;
+
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #fff;
     background-color: #7149C6;
@@ -98,17 +109,24 @@ button {
     cursor: pointer;
 }
 
+.free {
+    text-align: start;
+}
 
 /* Mobile menu toggle */
-.mobile-menu-toggle {
+.mobileMenuToggle {
     display: none;
     cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
 
+    * {
+        box-sizing: border-box;
+    }
+
     /* Mobile menu toggle */
-    .mobile-menu-toggle {
+    .mobileMenuToggle {
         display: block;
     }
 
@@ -119,16 +137,39 @@ button {
         right: 0;
         width: 100%;
         display: none;
+
         flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
         align-items: center;
         background-color: #fff;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         z-index: 1;
+        /* height:500px; */
+
     }
 
-    .navigation.show-menu {
+    .showMenu {
         display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+
     }
 
     .navigation a {
@@ -138,7 +179,7 @@ button {
     }
 
     /* Section below header */
-    .main-section {
+    .mainSection {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -146,24 +187,24 @@ button {
         padding: 50px;
     }
 
-    .left-side {
+    .leftSide {
         margin-bottom: 50px;
         text-align: center;
     }
 
-    .left-side h2 {
+    .leftSide h2 {
         margin-bottom: 20px;
         font-size: 32px;
         font-weight: bold;
     }
 
-    .left-side p {
+    .leftSide p {
         margin-bottom: 30px;
         font-size: 18px;
         line-height: 1.5;
     }
 
-    .left-side button {
+    .leftSide button {
         padding: 10px 20px;
         font-size: 16px;
         font-weight: bold;
@@ -174,12 +215,45 @@ button {
         cursor: pointer;
     }
 
-    .left-side button:hover {
+    .leftSide button:hover {
         background-color: #666;
     }
 
-    .right-side img {
+    .rightSide img {
         max-width: 100%;
         height: auto;
     }
+}
+
+
+/*  */
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+
+        max-width: 1400px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1400px;
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    h2 {
+        font-size: .5rem;
+    }
+
 }
