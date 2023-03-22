@@ -50,8 +50,6 @@ function Header() {
                     {
                         isMobileMenuVisible ? <FaTimes /> : <FaBars />
                     }
-
-
                 </div>
             </header>
         </>

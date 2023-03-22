@@ -26,11 +26,9 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
-
 }
 
-.navigation a {
+/* .navigation a {
     margin-left: 20px;
     color: #333;
     text-decoration: none;
@@ -38,7 +36,7 @@ header {
 
 .navigation a:hover {
     color: #666;
-}
+} */
 
 .home {
     display: flex;
@@ -172,11 +170,11 @@ button {
 
     }
 
-    .navigation a {
+    /* .navigation a {
         margin: 10px 0;
         font-size: 18px;
         font-weight: bold;
-    }
+    } */
 
     /* Section below header */
     .mainSection {
